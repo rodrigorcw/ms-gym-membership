@@ -3,9 +3,9 @@
 A system for managing gym membership plans, allowing control over subscriptions, pricing, and benefits.
 
 📌 Features
-✅ Register different membership plans (monthly, quarterly, annual, etc.)
-✅ Define prices and benefits for each plan
-✅ Manage subscriptions and expiration dates
+✅ Register different membership plans (monthly, quarterly, annual, etc.)    
+✅ Define prices and benefits for each plan    
+✅ Manage subscriptions and expiration dates    
 
 🚀 Technologies Used
 Backend: Java Spring Boot
