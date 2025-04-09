@@ -1,6 +1,5 @@
 package com.gym.api.application.dto;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.gym.api.domain.enums.MembershipStatusEnum;
 
 import java.math.BigDecimal;
@@ -12,11 +11,19 @@ public class MembershipDto {
     private String name;
     private String description;
     private BigDecimal monthlyPrice;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     private LocalDate startMembership;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     private LocalDate endMembership;
     private MembershipStatusEnum status;
+
+    public MembershipDto() {
+    }
+
+
+    public MembershipDto(Long id, String name, String description) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+    }
 
     public Long getId() {
         return id;
@@ -49,7 +56,6 @@ public class MembershipDto {
     public void setMonthlyPrice(BigDecimal monthlyPrice) {
         this.monthlyPrice = monthlyPrice;
     }
-
 
     public MembershipStatusEnum getStatus() {
         return status;
